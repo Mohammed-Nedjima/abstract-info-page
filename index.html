@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ABS | Help Center</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/tailwind.css" />
+    <link rel="icon" href="./assets/mono-arc-center.svg" />
+    <link rel="stylesheet" href="./src/main.css" />
+    <script
+      src="https://kit.fontawesome.com/536af953bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./src/index.js"></script>
+  </head>
+
+  <body>
+    <!-- Start header -->
+    <header
+      class="bg-slate-900 text-2xl py-4 px-3 md:px-8 lg:px-24 text-white flex flex-wrap justify-between items-center"
+    >
+      <div class="flex items-center">
+        <a href="#" class="flex items-center hover:opacity-80 duration-150">
+          <img
+            class="w-[55px] h-[40px]"
+            src="./assets/mono-arc-center.svg"
+            alt="logo"
+          />
+          <span class="inline font-bold">ABS</span>
+        </a>
+        <a
+          href="@"
+          class="block border-l-2 pl-4 border-solid border-white ml-4 hover:underline text-nowrap"
+          >Help Center</a
+        >
+      </div>
+      <!-- burger icon -->
+      <button
+        id="burger-icon"
+        aria-expanded="false"
+        class="group lg:hidden focus:outline-none cursor-pointer relative w-6 h-5"
+      >
+        <span
+          id="burger-icon-span1"
+          class="block w-full h-1 bg-white left-0 top-0 rounded-[2px] absolute group-aria-expanded:top-[6px] group-aria-expanded:rotate-45 transition-all duration-300 ease"
+        ></span>
+        <span
+          id="burger-icon-span2"
+          class="block w-full h-1 bg-white left-0 top-2 rounded-[2px] absolute group-aria-expanded:opacity-0 transition-all duration-300 ease-linear"
+        ></span>
+        <span
+          id="burger-icon-span3"
+          class="block w-full h-1 bg-white left-0 top-4 rounded-[2px] absolute group-aria-expanded:top-[6px] group-aria-expanded:-rotate-45 transition-all duration-300 ease-linear"
+        ></span>
+      </button>
+      <!-- nav large screens -->
+      <div class="hidden lg:flex">
+        <button
+          class="block bg-slate-800 py-2 px-6 border-white border-2 border-solid rounded-lg"
+        >
+          Submit request
+        </button>
+        <button
+          class="block bg-primary px-6 py-2 rounded-lg hover:bg-white hover:text-black duration-300 ml-4"
+        >
+          Sign in
+        </button>
+      </div>
+      <!-- nav small screens -->
+      <div
+        id="mobile-menu"
+        class="lg:hidden max-h-0 overflow-hidden absolute bg-slate-900 w-full left-0 top-[60px] text-center duration-700"
+      >
+        <div>
+          <button
+            class="block w-full p-8 hover:opacity-70 duration-150 border-b-2 border-solid border-white"
+          >
+            Submit request
+          </button>
+          <button class="block w-full hover:opacity-70 p-8 duration-150">
+            Sign in
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Start Hero  -->
+    <div class="pt-20 pb-28 bg-[#DADBF1] px-3 md:px-8 lg:px-24">
+      <div class="text-center mx-auto">
+        <h1 class="text-[40px] sm:text-[64px] md:text-[80px] px-0 md:px-4 mb-6">
+          How can we help?
+        </h1>
+        <form action="" novalidate>
+          <div
+            class="group flex justify-between border-black hover:border-primary border-[1px] rounded-[0.25rem] max-w-[720px] mx-auto overflow-hidden shadow-lg"
+          >
+            <input
+              id="search"
+              type="search"
+              name="search-bar"
+              class="border-none focus:outline-none w-full py-4 pl-4 text-2xl rounded-[0.25rem]"
+              placeholder="Search"
+            />
+            <i
+              class="fas fa-arrow-right text-black text-3xl font-light px-4 py-4 bg-white cursor-pointer group-hover:text-primary duration-300"
+            ></i>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Start content -->
+    <section class="px-3 md:px-8 lg:px-24 py-32">
+      <div class="grid md:grid-cols-2 gap-y-24 px-12 md:px-4 gap-12">
+        <!-- box -->
+        <div class="flex">
+          <img
+            class="max-h-20 mr-6 mt-2"
+            src="./assets/icon-versions.png"
+            alt=""
+          />
+          <div class="text-2xl">
+            <h4 class="font-semibold mb-4">Using ABS</h4>
+            <p class="mb-2">
+              ABS allows you to efficiently manage, version, and document your
+              designs in a centralized location.
+            </p>
+            <a href="#" class="hover:underline text-blue-600">Learn More →</a>
+          </div>
+        </div>
+        <!-- box -->
+        <div class="flex">
+          <img
+            class="max-h-20 mr-6 mt-2"
+            src="./assets/icon-account.png"
+            alt=""
+          />
+          <div class="text-2xl">
+            <h4 class="font-semibold mb-4">Manage your account</h4>
+            <p class="mb-2">
+              Configure your account settings, such as your email, profile
+              details, and password.
+            </p>
+            <a href="#" class="hover:underline text-blue-600">Learn More →</a>
+          </div>
+        </div>
+        <!-- box -->
+        <div class="flex">
+          <img
+            class="max-h-20 mr-6 mt-2"
+            src="./assets/icon-organizations.png"
+            alt=""
+          />
+          <div class="text-2xl">
+            <h4 class="font-semibold mb-4">
+              Manage organizations, teams, and projects
+            </h4>
+            <p class="mb-2">
+              Use ABS organizations, teams, and projects to effectively manage
+              and coordinate your teams and projects.
+            </p>
+            <a href="#" class="hover:underline text-blue-600">Learn More →</a>
+          </div>
+        </div>
+        <!-- box -->
+        <div class="flex">
+          <img
+            class="max-h-20 mr-6 mt-2"
+            src="./assets/icon-billing.png"
+            alt=""
+          />
+          <div class="text-2xl">
+            <h4 class="font-semibold mb-4">Manage billing</h4>
+            <p class="mb-2">Manage subscriptions and update payment details.</p>
+            <a href="#" class="hover:underline text-blue-600">Learn More →</a>
+          </div>
+        </div>
+        <!-- box -->
+        <div class="flex">
+          <img
+            class="max-h-20 mr-6 mt-2"
+            src="./assets/icon-authenticate.png"
+            alt=""
+          />
+          <div class="text-2xl">
+            <h4 class="font-semibold mb-4">Authenticate to ABS</h4>
+            <p class="mb-2">
+              Set up and configure Single Sign-On (SSO), System for Cross-domain
+              Identity Management (SCIM), and Just-in-Time (JIT) provisioning.
+            </p>
+            <a href="#" class="hover:underline text-blue-600">Learn More →</a>
+          </div>
+        </div>
+        <!-- box -->
+        <div class="flex">
+          <img
+            class="max-h-20 mr-6 mt-2"
+            src="./assets/icon-comment.png"
+            alt=""
+          />
+          <div class="text-2xl">
+            <h4 class="font-semibold mb-4">ABS support</h4>
+            <p class="mb-2">Contact our support team for assistance.</p>
+            <a href="#" class="hover:underline text-blue-600">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start footer -->
+    <div class="px-3 md:px-8 lg:px-24 py-16 bg-slate-900 text-white">
+      <div class="grid grid-cols-2 md:grid-cols-5">
+        <!-- group -->
+        <div>
+          <h4 class="text-2xl font-bold mb-2">ABS</h4>
+          <ul>
+            <li><a href="#" class="hover:underline">Start Trial</a></li>
+            <li><a href="#" class="hover:underline">Pricing</a></li>
+            <li><a href="#" class="hover:underline">Download</a></li>
+          </ul>
+        </div>
+        <!-- group -->
+        <div>
+          <h4 class="text-2xl font-bold mb-2">Resources</h4>
+          <ul>
+            <li><a href="#" class="hover:underline">Blog</a></li>
+            <li><a href="#" class="hover:underline">Help Center</a></li>
+            <li><a href="#" class="hover:underline">Release Notes</a></li>
+            <li><a href="#" class="hover:underline">Status</a></li>
+          </ul>
+        </div>
+        <!-- group -->
+        <div>
+          <h4 class="text-2xl font-bold mb-2">Community</h4>
+          <ul>
+            <li><a href="#" class="hover:underline">Twitter</a></li>
+            <li><a href="#" class="hover:underline">Linkedin</a></li>
+            <li><a href="#" class="hover:underline">Facebook</a></li>
+            <li><a href="#" class="hover:underline">Dribble</a></li>
+            <li><a href="#" class="hover:underline">Podcast</a></li>
+          </ul>
+        </div>
+        <!-- group -->
+        <div>
+          <h4 class="text-2xl font-bold mb-2">Company</h4>
+          <ul class="mb-4">
+            <li><a href="#" class="hover:underline">About Us</a></li>
+            <li><a href="#" class="hover:underline">Careers</a></li>
+            <li><a href="#" class="hover:underline">Legal</a></li>
+          </ul>
+          <h4 class="text-2xl font-bold mb-2">Contact Us</h4>
+          <a class="hover:underline" href="#">unknown@gmail.com </a>
+        </div>
+        <!-- group -->
+        <div class="mt-4 md:mt-48">
+          <img src="./assets/mono-arc-center.svg" class="w-24" alt="" />
+          <p class="text-xl mb-4">
+            Unofficial version<br />
+            Made by Mohammed Nedjima<br />
+            for learning purpose
+          </p>
+          <div class="flex">
+            <a
+              href="https://github.com/Mohammed-Nedjima"
+              target="_blank"
+              class="mr-4"
+            >
+              <i
+                class="fab fa-github text-3xl hover:opacity-70 duration-300"
+              ></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mohammed-ayoub-nedjima/"
+              target="_blank"
+              class="mr-4"
+            >
+              <i
+                class="fab fa-linkedin text-3xl hover:opacity-70 duration-300"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
